@@ -4,7 +4,6 @@ const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 
 const openModal = function () {
-  console.log('button clicked');
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
@@ -18,5 +17,4 @@ const CloseModal = function () {
 };
 
 btnCloseModal.addEventListener('click', CloseModal);
-
 overlay.addEventListener('click', CloseModal);
